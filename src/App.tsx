@@ -1,15 +1,9 @@
-import { useAppDispatch, useAppSelector } from "./app/hooks";
-import { increment } from "./features/counter/counter-slice";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Counter from "./features/counter/Counter";
 
 function App() {
-  const count = useAppSelector((state) => state.counter.value);
-  const dispatch = useAppDispatch();
-
-  const handleClick = () => dispatch(increment());
-
   return (
     <>
       <div>
@@ -22,7 +16,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={handleClick}>count is : {count} </button>
+        <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
