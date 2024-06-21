@@ -2,8 +2,13 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Counter from "./features/counter/Counter";
+// import { useAppSelector, useAppDispatch } from "./app/hooks";
+import { useFetchBreedsQuery } from "./features/dogs/dogs-api-slice";
 
 function App() {
+  // const count = useAppSelector((state) => state.counter.value);
+  // const dispatch = useAppDispatch()
+
   return (
     <>
       <div>
